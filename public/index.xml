@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Angad Muthyala - Portfolio</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Angad Muthyala - Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;&#xA;&lt;p&gt;I’m Angad Muthyala, a final-year Computer Science student graduating in April 2026. I’m passionate about backend development and AI-driven workflows, with a strong interest in languages like Go and Python. I’ve built projects that combine scalable systems with intelligent applications, and I’m now contributing to the open-source community as part of my belief in collaboration and knowledge sharing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;technical-skills&#34;&gt;Technical Skills&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Languages:&lt;/strong&gt; Python, Golang, C++&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Frameworks/Tools:&lt;/strong&gt; Flask, FastAPI, PyTorch, Scikit-learn, Node.js, Git&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Community</title>
+      <link>http://localhost:1313/community/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/community/</guid>
+      <description>&lt;h1 id=&#34;community--leadership&#34;&gt;Community &amp;amp; Leadership&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m passionate about building tech communities and helping others get started with open-source contributions and development.&lt;/p&gt;&#xA;&lt;h2 id=&#34;fossunited---campus-lead&#34;&gt;FossUnited - Campus Lead&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Founding and Leading FOSS Culture&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Founded and lead a FOSS (Free and Open Source Software) student club&lt;/li&gt;&#xA;&lt;li&gt;Conducted workshops and hackathons promoting OSS culture&lt;/li&gt;&#xA;&lt;li&gt;Enabled students to contribute to open-source for the first time&lt;/li&gt;&#xA;&lt;li&gt;Organized events to introduce students to the world of open-source development&lt;/li&gt;&#xA;&lt;li&gt;Built a community focused on collaborative learning and contribution&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://forum.fossunited.org/t/foss-club-sigce/4610/10&#34;&gt;More Info&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;h1 id=&#34;get-in-touch&#34;&gt;Get In Touch&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m always interested in discussing new opportunities, collaborating on interesting projects, or just having a conversation about technology and development.&lt;/p&gt;&#xA;&lt;h2 id=&#34;contact-information&#34;&gt;Contact Information&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:angadmuthyala@gmail.com&#34;&gt;angadmuthyala@gmail.com&lt;/a&gt;&lt;br&gt;&#xA;&lt;strong&gt;Phone:&lt;/strong&gt; +91-8779263718&lt;br&gt;&#xA;&lt;strong&gt;Location:&lt;/strong&gt; Mumbai, India&lt;/p&gt;&#xA;&lt;h2 id=&#34;connect-online&#34;&gt;Connect Online&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/AngadVM&#34;&gt;AngadVM&lt;/a&gt;&lt;br&gt;&#xA;View my code, contributions, and open-source projects&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://www.linkedin.com/in/angad-muthyala/&#34;&gt;angad-muthyala&lt;/a&gt;&lt;br&gt;&#xA;Let&amp;rsquo;s connect professionally and stay in touch&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-im-looking-for&#34;&gt;What I&amp;rsquo;m Looking For&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Software Engineering&lt;/strong&gt; roles in backend development&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Machine Learning&lt;/strong&gt; opportunities in AI/ML applications&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Data Science&lt;/strong&gt; positions involving data-centric solutions&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Open-source collaboration&lt;/strong&gt; on interesting projects&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Community building&lt;/strong&gt; and technical mentorship opportunities&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;current-status&#34;&gt;Current Status&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Graduating:&lt;/strong&gt; April 2026 from Computer Science program&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Available for:&lt;/strong&gt; Internships, part-time opportunities, and project collaborations&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Interested in:&lt;/strong&gt; Full-time opportunities starting from 2026&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;response-time&#34;&gt;Response Time&lt;/h2&gt;&#xA;&lt;p&gt;I typically respond to emails within 24 hours. For urgent matters, feel free to reach out via LinkedIn as well.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;h1 id=&#34;projects&#34;&gt;Projects&lt;/h1&gt;&#xA;&lt;p&gt;Here are some of the key projects I&amp;rsquo;ve built, focusing on AI, backend systems, and data-centric applications.&lt;/p&gt;&#xA;&lt;h2 id=&#34;newsletter-agent&#34;&gt;Newsletter Agent&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Automated AI Newsletter Generator&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Built an AI-powered agent that scrapes, summarizes, and distributes tech updates from Stack Overflow.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Integrated &lt;strong&gt;LangGraph&lt;/strong&gt; for control flow&lt;/li&gt;&#xA;&lt;li&gt;Used &lt;strong&gt;ChromaDB&lt;/strong&gt; for vector indexing&lt;/li&gt;&#xA;&lt;li&gt;Implemented &lt;strong&gt;SendGrid&lt;/strong&gt; for seamless email dispatch&lt;/li&gt;&#xA;&lt;li&gt;Automated content curation and distribution pipeline&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/AngadVM/newsletter_agent.git&#34;&gt;View on GitHub&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;ai-based-security-log-analyzer&#34;&gt;AI-Based Security Log Analyzer&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Real-Time Threat Detection Engine&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

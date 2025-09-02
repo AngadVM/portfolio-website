@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Angad Muthyala - Portfolio</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Georgia, 'Times New Roman', serif;
+        line-height: 1.6;
+        color: #333;
+        background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 1rem 0;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .nav-container {
+        max-width: 1100px;   
+        margin: 0 auto;
+        padding: 0 3rem;   
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-logo {
+        font-size: 1.4rem;   
+        font-weight: normal;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+    }
+    
+    .nav-links a {
+        color: #555;
+        text-decoration: none;
+        font-size: 1.1rem;   
+    }
+    
+    .nav-links a:hover {
+        color: #333;
+    }
+    
+    .container {
+        max-width: 1100px;   
+        margin: 0 auto;
+        padding: 3rem 3rem;   
+        flex: 1;
+    }
+    
+    .content {
+        text-align: left;
+    }
+    
+    h1 {
+        font-size: 2.6rem;   
+        margin-bottom: 1rem;
+        color: #333;
+        font-weight: normal;
+    }
+    
+    h2 {
+        font-size: 1.8rem;   
+        color: #333;
+        margin: 2rem 0 1rem 0;
+        font-weight: normal;
+    }
+    
+    h3 {
+        font-size: 1.4rem;   
+        color: #333;
+        margin: 1.5rem 0 0.5rem 0;
+        font-weight: normal;
+    }
+    
+    p {
+        font-size: 1.1rem;   
+        color: #555;
+        margin-bottom: 1rem;
+    }
+    
+    ul {
+        margin: 1rem 0;
+        padding-left: 2rem;
+    }
+    
+    li {
+        font-size: 1.1rem;   
+        color: #555;
+        margin-bottom: 0.5rem;
+    }
+    
+    a {
+        color: #555;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: #333;
+        text-decoration: underline;
+    }
+    
+    strong {
+        color: #333;
+    }
+    
+    .back-link {
+        display: inline-block;
+        margin-bottom: 2rem;
+        color: #666;
+        font-size: 1rem;   
+    }
+    
+    .back-link:hover {
+        color: #333;
+    }
+    
+     
+    @media (max-width: 768px) {
+        .nav-container {
+            padding: 0 2rem;
+        }
+        
+        .container {
+            padding: 2rem 2rem;
+        }
+        
+        .nav-links {
+            gap: 1.5rem;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+        }
+    }
+</style></head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">Angad Muthyala</a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/community">Community</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="content">
+            <a href="/" class="back-link">← Back to Home</a>
+            <h1 id="projects">Projects</h1>
+<p>Here are some of the key projects I&rsquo;ve built, focusing on AI, backend systems, and data-centric applications.</p>
+<h2 id="newsletter-agent">Newsletter Agent</h2>
+<p><strong>Automated AI Newsletter Generator</strong></p>
+<p>Built an AI-powered agent that scrapes, summarizes, and distributes tech updates from Stack Overflow.</p>
+<ul>
+<li>Integrated <strong>LangGraph</strong> for control flow</li>
+<li>Used <strong>ChromaDB</strong> for vector indexing</li>
+<li>Implemented <strong>SendGrid</strong> for seamless email dispatch</li>
+<li>Automated content curation and distribution pipeline</li>
+</ul>
+<p><a href="https://github.com/AngadVM/newsletter_agent.git">View on GitHub</a></p>
+<hr>
+<h2 id="ai-based-security-log-analyzer">AI-Based Security Log Analyzer</h2>
+<p><strong>Real-Time Threat Detection Engine</strong></p>
+<p>Designed an open-source tool to ingest and analyze server logs for anomaly detection and threat classification.</p>
+<ul>
+<li>Leveraged <strong>Scikit-learn</strong> models for ML-based detection</li>
+<li>Built <strong>FastAPI</strong> backend for API delivery</li>
+<li>Used <strong>Elasticsearch</strong> as the storage/query layer</li>
+<li>Implemented <strong>WebSocket</strong>-based live log updates</li>
+<li>Created responsive <strong>React + Tailwind</strong> dashboard</li>
+</ul>
+<p><a href="https://github.com/AngadVM/AI-Based-Security-Log-Analyzer">View on GitHub</a></p>
+<hr>
+<h2 id="virtual-sanctuary">Virtual Sanctuary</h2>
+<p><strong>Location-Based Wildlife Explorer</strong></p>
+<p>Full-stack web app showcasing species native to user-defined regions using I-Naturalist &amp; GBIF APIs.</p>
+<ul>
+<li>Optimized performance through <strong>Flask</strong> backend</li>
+<li>Built <strong>React</strong> frontend with smooth user experience</li>
+<li>Implemented geolocation logic via <strong>GeoPy</strong></li>
+<li>Integrated multiple wildlife databases</li>
+</ul>
+<p><a href="https://github.com/AngadVM/virtual-sanctuary">View on GitHub</a></p>
+<hr>
+<h2 id="json-api-banking-backend">JSON API Banking Backend</h2>
+<p><strong>Secure Banking System</strong></p>
+<p>Developed a RESTful backend in Go with PostgreSQL to manage user accounts and transactions.</p>
+<ul>
+<li>Built with <strong>Go</strong> for high performance</li>
+<li>Used <strong>PostgreSQL</strong> for secure data storage</li>
+<li>Structured for modular growth</li>
+<li>Designed to mimic secure banking logic</li>
+<li>RESTful API architecture</li>
+</ul>
+<p><a href="https://github.com/AngadVM/JSON-API-Project">View on GitHub</a></p>
+<hr>
+<h2 id="whats-next">What&rsquo;s Next?</h2>
+<p>I&rsquo;m currently working on expanding my open-source contributions and exploring new technologies in the AI and backend development space. Always open to collaboration on interesting projects!</p>
+
+        </div>
+    </div>
+</body>
+</html>
