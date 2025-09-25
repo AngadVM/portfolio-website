@@ -11,8 +11,13 @@ As a final-year Computer Science student, I'm passionate about building intellig
 
 ## Navigation
 
+<div class="nav-section">
+
 - **[About](/about)** - My background, education, and journey
 - **[Projects](/projects)** - Technical projects and open-source contributions  
 - **[Community](/community)** - Leadership roles and community involvement
 - **[Contact](/contact)** - Let's connect!
 - *[Download Resume](/upload/angad_resume.pdf)*
+
+</div>
+
