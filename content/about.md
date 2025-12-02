@@ -10,11 +10,11 @@ I’m Angad Muthyala, a final-year Computer Science student graduating in April 
 
 **Languages:** Python, Golang, C++
 
-**Frameworks/Tools:** Flask, FastAPI, PyTorch, Scikit-learn, Node.js, Git
+**Frameworks/Tools:** NestJS, Next.js, Flask, FastAPI, PyTorch, Scikit-learn, Git
 
 **Databases:** Elasticsearch, PostgreSQL, MongoDB, MySQL
 
-**Other:** WebSockets, ChromaDB, SendGrid, GeoPy, Linux, REST APIs
+**Other:** WebSockets, ChromaDB, Linux, REST APIs, Real-time Pipelines
 
 ## What I'm Looking For
 
