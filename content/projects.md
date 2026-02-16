@@ -1,69 +1,76 @@
 ---
-title: "Projects"
+title: "Experience & Projects"
 ---
 
-# Projects
+# Experience & Projects
 
-Here are some of the key projects I've built, focusing on AI, backend systems, and data-centric applications.
+A selection of professional work and technical systems demonstrating backend architecture, AI integration, real-time pipelines, and full-stack product engineering.
 
-## Newsletter Agent
-**Automated AI Newsletter Generator**
+## Interview Screener Platform  
+AI BI Street Pvt. Ltd. | Backend Developer  
+November 2025 – Present
 
-Built an AI-powered agent that scrapes, summarizes, and distributes tech updates from Stack Overflow.
+Architecting and building a full-stack automated interview platform designed to streamline technical recruitment workflows.
 
-- Integrated **LangGraph** for control flow
-- Used **ChromaDB** for vector indexing  
-- Implemented **SendGrid** for seamless email dispatch
-- Automated content curation and distribution pipeline
+Designed the core backend architecture using NestJS with PostgreSQL, implementing scalable data models for a multi-tenant interview system. Built structured modules for interview creation, scheduling, candidate onboarding, and recruiter workflows. Developed a timed video response system with secure recording and playback capabilities, ensuring reliable storage and access handling.
 
-[View on GitHub](https://github.com/AngadVM/newsletter_agent.git)
+Implemented link-based authentication to enable secure candidate access without traditional login flows. Designed subscription-based feature control with tiered access logic embedded directly into structured RESTful APIs. Optimized API performance to handle concurrent interview sessions and high recruiter activity without degradation.
 
----
+Tech Stack: NestJS, Next.js, PostgreSQL, REST APIs
+
 
 ## AI-Based Security Log Analyzer  
-**Real-Time Threat Detection Engine**
+Real-Time Threat Detection Engine  | [→ Github](https://github.com/AngadVM/AI-Based-Security-Log-Analyzer)  
 
-Designed an open-source tool to ingest and analyze server logs for anomaly detection and threat classification.
+An open-source security platform that ingests server logs in real time, detects anomalies using machine learning, and classifies threats through an interactive dashboard.
 
-- Leveraged **Scikit-learn** models for ML-based detection
-- Built **FastAPI** backend for API delivery
-- Used **Elasticsearch** as the storage/query layer
-- Implemented **WebSocket**-based live log updates
-- Created responsive **React + Tailwind** dashboard
+Built a high-throughput log ingestion pipeline using FastAPI, integrated with Elasticsearch for indexing, querying, and large-scale log storage. Designed a modular ML pipeline using Scikit-learn to perform anomaly detection with configurable thresholds, enabling adaptive threat classification across critical, warning, and informational levels.
 
-[View on GitHub](https://github.com/AngadVM/AI-Based-Security-Log-Analyzer)
+Implemented WebSocket-based real-time streaming to power a live React dashboard with historical analysis capabilities. Structured the system to handle high-volume log streams efficiently while maintaining performance stability.
 
----
+Tech Stack: Python, FastAPI, Scikit-learn, Elasticsearch, WebSockets, React, Tailwind CSS
 
-## Virtual Sanctuary
-**Location-Based Wildlife Explorer**
 
-Full-stack web app showcasing species native to user-defined regions using I-Naturalist & GBIF APIs.
+## Newsletter Agent  
+Automated AI Newsletter Generator  | [→ Github](https://github.com/AngadVM/newsletter_agent.git)  
 
-- Optimized performance through **Flask** backend
-- Built **React** frontend with smooth user experience
-- Implemented geolocation logic via **GeoPy**
-- Integrated multiple wildlife databases
+An AI-driven content pipeline that scrapes technical discussions from Stack Overflow, processes relevance using embeddings, and generates summarized newsletters automatically.
 
-[View on GitHub](https://github.com/AngadVM/virtual-sanctuary)
+Orchestrated the workflow using LangGraph to manage complex state transitions and automation logic. Integrated ChromaDB for vector storage and semantic search, enabling relevance filtering based on embeddings. Built scraping and content extraction pipelines, followed by AI-powered summarization and structured email generation.
 
----
+Designed the system to operate as a fully automated scheduled pipeline with error handling, retry mechanisms, and scalable extension points for additional content sources.
 
-## JSON API Banking Backend
-**Secure Banking System**
+Tech Stack: Python, LangGraph, ChromaDB, SendGrid, Web Scraping
 
-Developed a RESTful backend in Go with PostgreSQL to manage user accounts and transactions.
 
-- Built with **Go** for high performance
-- Used **PostgreSQL** for secure data storage
-- Structured for modular growth
-- Designed to mimic secure banking logic
-- RESTful API architecture
+## Virtual Sanctuary  
+Location-Based Wildlife Explorer | [→ Github](https://github.com/AngadVM/virtual-sanctuary)  
 
-[View on GitHub](https://github.com/AngadVM/JSON-API-Project)
+A full-stack web application that retrieves wildlife species data based on user-defined geographic locations by querying I-Naturalist and GBIF biodiversity databases.
 
----
+Developed a Flask backend for API aggregation and geospatial processing using GeoPy. Built a React-based frontend with interactive map visualization and responsive UI design. Implemented intelligent caching to optimize repeated geographic queries and reduce external API latency.
 
-## What's Next?
+Designed the system with clean separation between backend data processing and frontend rendering, ensuring maintainability and extensibility.
 
-I'm currently working on expanding my open-source contributions and exploring new technologies in the AI and backend development space. Always open to collaboration on interesting projects!
+Tech Stack: Python, Flask, React, GeoPy, I-Naturalist API, GBIF API
+
+
+## JSON API Banking Backend  
+Secure Banking System  | [→ Github](https://github.com/AngadVM/JSON-API-Projects)  
+
+
+
+A RESTful banking backend engineered in Go with PostgreSQL, focused on secure transaction processing and concurrent request handling.
+
+Designed ACID-compliant transaction workflows for deposits, withdrawals, and transfers. Implemented modular REST API architecture with structured input validation, authentication, and authorization layers. Leveraged Go routines for concurrent processing while ensuring database integrity through controlled transaction management.
+
+The system emphasizes performance, reliability, and clean architectural separation.
+
+Tech Stack: Go, PostgreSQL, REST API
+
+
+## Ongoing Focus
+
+Continuously expanding open-source contributions, building production-grade developer tools, and exploring distributed systems and advanced ML architectures.
+
+For collaboration or technical discussions: /contact

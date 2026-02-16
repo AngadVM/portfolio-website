@@ -4,23 +4,14 @@ title: "About"
 
 # About Me
 
-I’m Angad Muthyala, a final-year Computer Science student graduating in April 2026. I’m passionate about backend development and AI-driven workflows, with a strong interest in languages like Go and Python. I’ve built projects that combine scalable systems with intelligent applications, and I’m now contributing to the open-source community as part of my belief in collaboration and knowledge sharing.
+I'm Angad Muthyala, a backend engineer focused on building scalable systems and integrating AI into production environments. I design and develop backend architectures that are reliable, maintainable, and built for real-world scale.
 
-## Technical Skills
+My work spans high-performance APIs, real-time systems, authentication workflows, and ML-powered pipelines. I’ve built and shipped full-stack products, architected structured backend services, and contributed to system-level decisions that improve performance and reliability.
 
-**Languages:** Python, Golang, C++
+Technically, I work across Python, Golang, and TypeScript, building services with frameworks like NestJS, FastAPI, and Flask. I’ve worked with PostgreSQL, MongoDB, Elasticsearch, and vector databases, and have experience deploying machine learning systems using PyTorch and Scikit-learn. My interests lie at the intersection of backend infrastructure and applied AI.
 
-**Frameworks/Tools:** NestJS, Next.js, Flask, FastAPI, PyTorch, Scikit-learn, Git
+Beyond engineering, I’ve led developer communities and technical initiatives, organizing workshops, mentoring peers, and fostering open-source contributions. I believe strong systems are built by strong teams, and strong teams are built through shared knowledge.
 
-**Databases:** Elasticsearch, PostgreSQL, MongoDB, MySQL
+I value clarity in architecture, discipline in execution, and ownership in everything I build.
 
-**Other:** WebSockets, ChromaDB, Linux, REST APIs, Real-time Pipelines
-
-## What I'm Looking For
-
-I aim to deliver intelligent and impactful software solutions in Software Engineering, Machine Learning, or Data Science roles. I enjoy working on projects that solve real-world problems and bring meaningful outcomes.
-
-## Personal Interests
-
-Beyond coding, I actively engage in community building and open-source contributions, believing in the power of teamwork and knowledge sharing in technology.
-
+Let’s connect — angadmuthyala@gmail.com
