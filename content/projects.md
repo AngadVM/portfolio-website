@@ -73,4 +73,4 @@ Tech Stack: Go, PostgreSQL, REST API
 
 Continuously expanding open-source contributions, building production-grade developer tools, and exploring distributed systems and advanced ML architectures.
 
-For collaboration or technical discussions: /contact
+For collaboration or technical discussions: [→ Contact](/contact)
