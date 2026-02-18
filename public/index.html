@@ -8,22 +8,20 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,300;1,8..60,400&family=DM+Mono:wght@400;500&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
             rel="stylesheet"
         />
 
         <style>
             :root {
-                --bg: #f2ede8;
-                --bg-card: #faf7f4;
-                --bg-card-alt: #ede8e2;
-                --border: rgba(160, 140, 120, 0.22);
-                --text-primary: #1c1917;
-                --text-body: #3d3530;
-                --text-muted: #8a7f78;
-                --text-faint: #b5ada6;
-                --accent: #c96a2e;
-                --accent-hover: #a8521e;
+                --bg: #ffffff;
+                --text-primary: #000000;
+                --text-body: #171717;
+                --text-muted: #737373;
+                --text-faint: #a3a3a3;
+                --border: #e5e5e5;
+                --accent: #0066ff;
+                --accent-hover: #0052cc;
             }
 
             *,
@@ -39,181 +37,95 @@
             }
 
             body {
-                font-family: "Source Serif 4", Georgia, serif;
-                background-color: var(--bg);
+                font-family:
+                    "Manrope",
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    sans-serif;
+                background: var(--bg);
                 color: var(--text-body);
-                line-height: 1.75;
+                line-height: 1.6;
                 min-height: 100vh;
                 display: flex;
                 flex-direction: column;
                 -webkit-font-smoothing: antialiased;
-                position: relative;
-                overflow-x: hidden;
+                -moz-osx-font-smoothing: grayscale;
             }
 
-             
-            body::after {
-                content: "";
-                position: fixed;
-                inset: 0;
-                background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
-                pointer-events: none;
-                z-index: 9999;
-                mix-blend-mode: multiply;
-            }
-
-             
-            body::before {
-                content: "";
-                position: fixed;
-                inset: 0;
-                background:
-                    radial-gradient(
-                        ellipse 70% 50% at 5% 0%,
-                        rgba(201, 106, 46, 0.07) 0%,
-                        transparent 55%
-                    ),
-                    radial-gradient(
-                        ellipse 50% 70% at 95% 100%,
-                        rgba(42, 82, 152, 0.04) 0%,
-                        transparent 55%
-                    );
-                pointer-events: none;
-                z-index: 0;
-            }
-
-            .site-wrapper {
-                position: relative;
-                z-index: 1;
+            .wrapper {
+                flex: 1;
                 display: flex;
                 flex-direction: column;
-                min-height: 100vh;
             }
 
              
             .hero {
-                max-width: 680px;
+                max-width: 640px;
                 margin: 0 auto;
-                padding: 8rem 3rem 4rem;
+                padding: 10rem 2rem 6rem;
                 width: 100%;
-                flex: 1;
-            }
-
-            .hero-eyebrow {
-                display: inline-flex;
-                align-items: center;
-                gap: 0.6rem;
-                font-family: "DM Mono", monospace;
-                font-size: 0.7rem;
-                font-weight: 500;
-                color: var(--accent);
-                letter-spacing: 0.16em;
-                text-transform: uppercase;
-                margin-bottom: 2rem;
-                opacity: 0;
-                animation: fadeUp 0.6s ease forwards 0.1s;
-            }
-
-            .hero-eyebrow::before {
-                content: "";
-                display: inline-block;
-                width: 28px;
-                height: 1px;
-                background: var(--accent);
             }
 
             h1 {
-                font-family: "Playfair Display", Georgia, serif;
-                font-size: clamp(2.8rem, 5.5vw, 4rem);
+                font-size: clamp(2.5rem, 6vw, 3.75rem);
                 font-weight: 700;
                 color: var(--text-primary);
-                line-height: 1.08;
-                letter-spacing: -0.03em;
-                margin-bottom: 1.75rem;
-                opacity: 0;
-                animation: fadeUp 0.7s ease forwards 0.2s;
+                letter-spacing: -0.04em;
+                line-height: 1;
+                margin-bottom: 1.5rem;
             }
 
-            .hero-intro {
-                font-size: 1.1rem;
-                font-weight: 300;
-                color: var(--text-body);
-                line-height: 1.85;
-                margin-bottom: 0.85rem;
-                opacity: 0;
-                animation: fadeUp 0.7s ease forwards 0.35s;
-            }
-
-            .hero-intro em {
-                font-style: italic;
+            .subtitle {
+                font-size: 1.125rem;
+                font-weight: 400;
                 color: var(--text-muted);
+                line-height: 1.7;
+                margin-bottom: 0.75rem;
             }
 
-             
-            .hero-pill {
-                display: inline-flex;
-                align-items: center;
-                gap: 0.55rem;
-                font-family: "DM Mono", monospace;
-                font-size: 0.74rem;
-                color: var(--text-muted);
-                border: 1px solid var(--border);
-                border-radius: 2rem;
-                padding: 0.4rem 1rem 0.4rem 0.8rem;
-                margin-bottom: 4.5rem;
-                opacity: 0;
-                animation: fadeUp 0.7s ease forwards 0.45s;
+            .meta {
+                display: flex;
+                gap: 1.5rem;
+                flex-wrap: wrap;
+                margin-top: 3rem;
+                padding-top: 3rem;
+                border-top: 1px solid var(--border);
             }
 
-            .status-dot {
-                width: 6px;
-                height: 6px;
-                border-radius: 50%;
-                background: #22c55e;
-                flex-shrink: 0;
-                animation: glow 2.5s ease infinite;
+            .meta-item {
+                display: flex;
+                flex-direction: column;
+                gap: 0.25rem;
             }
 
-            @keyframes glow {
-                0%,
-                100% {
-                    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.2);
-                }
-                50% {
-                    box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.07);
-                }
-            }
-
-             
-            .section-label {
-                font-family: "DM Mono", monospace;
-                font-size: 0.67rem;
+            .meta-label {
+                font-family: "JetBrains Mono", monospace;
+                font-size: 0.6875rem;
                 font-weight: 500;
                 color: var(--text-faint);
-                letter-spacing: 0.14em;
                 text-transform: uppercase;
-                margin-bottom: 1.5rem;
-                display: flex;
-                align-items: center;
-                gap: 0.75rem;
-                opacity: 0;
-                animation: fadeUp 0.7s ease forwards 0.5s;
+                letter-spacing: 0.1em;
             }
 
-            .section-label::after {
-                content: "";
-                flex: 1;
-                height: 1px;
-                background: var(--border);
+            .meta-value {
+                font-size: 0.875rem;
+                font-weight: 500;
+                color: var(--text-body);
             }
 
              
+            .nav-section {
+                max-width: 640px;
+                margin: 0 auto;
+                padding: 0 2rem 8rem;
+                width: 100%;
+            }
+
             .nav-list {
                 list-style: none;
-                padding: 0;
-                margin: 0;
-                opacity: 0;
-                animation: fadeUp 0.7s ease forwards 0.55s;
+                display: flex;
+                flex-direction: column;
+                gap: 0;
             }
 
             .nav-list li {
@@ -226,23 +138,53 @@
 
             .nav-list a {
                 display: flex;
-                align-items: baseline;
+                align-items: center;
                 justify-content: space-between;
-                gap: 2rem;
-                padding: 1.1rem 0;
+                padding: 1.25rem 0;
                 text-decoration: none;
-                border-bottom: none;
                 color: inherit;
-                transition: padding-left 0.2s ease;
+                transition: padding-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                position: relative;
+            }
+
+            .nav-list a::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 3px;
+                height: 0;
+                background: var(--accent);
+                transition: height 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+
+            .nav-list a:hover::before {
+                height: 60%;
             }
 
             .nav-list a:hover {
-                padding-left: 0.5rem;
-                border-bottom: none;
+                padding-left: 1rem;
+            }
+
+            .nav-title {
+                font-size: 1.125rem;
+                font-weight: 600;
+                color: var(--text-primary);
+                letter-spacing: -0.02em;
+                transition: color 0.2s ease;
             }
 
             .nav-list a:hover .nav-title {
                 color: var(--accent);
+            }
+
+            .nav-arrow {
+                font-size: 1.25rem;
+                color: var(--text-faint);
+                opacity: 0;
+                transform: translateX(-8px);
+                transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
             }
 
             .nav-list a:hover .nav-arrow {
@@ -251,62 +193,16 @@
                 color: var(--accent);
             }
 
-            .nav-left {
-                display: flex;
-                align-items: baseline;
-                gap: 1.25rem;
-            }
-
-            .nav-num {
-                font-family: "DM Mono", monospace;
-                font-size: 0.62rem;
-                color: var(--text-faint);
-                letter-spacing: 0.06em;
-                flex-shrink: 0;
-                width: 1.5rem;
-            }
-
-            .nav-title {
-                font-family: "Playfair Display", serif;
-                font-size: 1.15rem;
-                font-weight: 500;
-                color: var(--text-primary);
-                transition: color 0.2s ease;
-            }
-
-            .nav-right {
-                display: flex;
-                align-items: center;
-                gap: 1.25rem;
-                flex-shrink: 0;
-            }
-
-            .nav-desc {
-                font-size: 0.85rem;
-                color: var(--text-faint);
-                font-style: italic;
-            }
-
-            .nav-arrow {
-                font-size: 0.8rem;
-                color: var(--text-faint);
-                opacity: 0;
-                transform: translateX(-6px);
-                transition: all 0.2s ease;
-            }
-
              
             footer {
                 border-top: 1px solid var(--border);
-                background: var(--bg-card-alt);
-                position: relative;
-                z-index: 1;
+                padding: 2rem 0;
             }
 
             .footer-inner {
-                max-width: 680px;
+                max-width: 640px;
                 margin: 0 auto;
-                padding: 1.75rem 3rem;
+                padding: 0 2rem;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -321,165 +217,106 @@
             }
 
             .footer-links a {
-                font-size: 0.87rem;
+                font-size: 0.875rem;
+                font-weight: 500;
                 color: var(--text-muted);
                 text-decoration: none;
-                border-bottom: none;
-                font-weight: 400;
                 transition: color 0.2s ease;
             }
 
             .footer-links a:hover {
                 color: var(--accent);
-                border-bottom: none;
             }
 
             .footer-copy {
-                font-family: "DM Mono", monospace;
-                font-size: 0.68rem;
+                font-family: "JetBrains Mono", monospace;
+                font-size: 0.75rem;
                 color: var(--text-faint);
-                letter-spacing: 0.04em;
+                letter-spacing: 0.03em;
             }
 
              
-            @keyframes fadeUp {
-                from {
-                    opacity: 0;
-                    transform: translateY(16px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-
-             
-            @media (max-width: 680px) {
-                .hero,
-                .footer-inner {
-                    padding-left: 2rem;
-                    padding-right: 2rem;
-                }
-
-                .nav-desc {
-                    display: none;
-                }
-            }
-
-            @media (max-width: 480px) {
+            @media (max-width: 640px) {
                 .hero {
-                    padding-top: 5rem;
-                    padding-left: 1.5rem;
-                    padding-right: 1.5rem;
+                    padding: 6rem 1.5rem 4rem;
                 }
-
+                .nav-section {
+                    padding: 0 1.5rem 6rem;
+                }
                 .footer-inner {
-                    padding: 1.5rem;
+                    padding: 0 1.5rem;
                     flex-direction: column;
                     align-items: flex-start;
                 }
-
                 h1 {
-                    font-size: 2.4rem;
+                    font-size: 2.25rem;
                 }
-                .hero-intro {
+                .subtitle {
                     font-size: 1rem;
+                }
+                .meta {
+                    gap: 1rem;
                 }
             }
         </style>
     </head>
     <body>
-        <div class="site-wrapper">
+        <div class="wrapper">
             <header class="hero">
-                <div class="hero-eyebrow">Active Development · 2026</div>
-
                 <h1>Angad Muthyala</h1>
-
-                <p class="hero-intro">
+                <p class="subtitle">
                     I’m a software engineer building scalable systems and
                     constantly refining my craft. I’m always learning and
                     growing—fueled by curiosity and enough coffee to legally be
                     considered a stimulant.
                 </p>
 
-                <div class="hero-pill">
-                    <span class="status-dot"></span>
-                    Currently at AI BI Street &nbsp;·&nbsp; Mumbai
+                <div class="meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Role</span>
+                        <span class="meta-value">Software Developer</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Location</span>
+                        <span class="meta-value">Mumbai, India</span>
+                    </div>
                 </div>
+            </header>
 
-                <div class="section-label">Navigate</div>
-
+            <nav class="nav-section">
                 <ul class="nav-list">
                     <li>
                         <a href="/about">
-                            <div class="nav-left">
-                                <span class="nav-num">01</span>
-                                <span class="nav-title">About</span>
-                            </div>
-                            <div class="nav-right">
-                                <span class="nav-desc"
-                                    >Background &amp; skills</span
-                                >
-                                <span class="nav-arrow">→</span>
-                            </div>
+                            <span class="nav-title">About</span>
+                            <span class="nav-arrow">→</span>
                         </a>
                     </li>
                     <li>
                         <a href="/projects">
-                            <div class="nav-left">
-                                <span class="nav-num">02</span>
-                                <span class="nav-title">Projects</span>
-                            </div>
-                            <div class="nav-right">
-                                <span class="nav-desc"
-                                    >Production &amp; open-source</span
-                                >
-                                <span class="nav-arrow">→</span>
-                            </div>
+                            <span class="nav-title">Projects</span>
+                            <span class="nav-arrow">→</span>
                         </a>
                     </li>
                     <li>
                         <a href="/community">
-                            <div class="nav-left">
-                                <span class="nav-num">03</span>
-                                <span class="nav-title">Leadership</span>
-                            </div>
-                            <div class="nav-right">
-                                <span class="nav-desc"
-                                    >FOSS United &amp; GDSC</span
-                                >
-                                <span class="nav-arrow">→</span>
-                            </div>
+                            <span class="nav-title">Community</span>
+                            <span class="nav-arrow">→</span>
                         </a>
                     </li>
                     <li>
                         <a href="/contact">
-                            <div class="nav-left">
-                                <span class="nav-num">04</span>
-                                <span class="nav-title">Contact</span>
-                            </div>
-                            <div class="nav-right">
-                                <span class="nav-desc"
-                                    >Discuss opportunities</span
-                                >
-                                <span class="nav-arrow">→</span>
-                            </div>
+                            <span class="nav-title">Contact</span>
+                            <span class="nav-arrow">→</span>
                         </a>
                     </li>
                     <li>
                         <a href="/upload/angad_resume.pdf">
-                            <div class="nav-left">
-                                <span class="nav-num">—</span>
-                                <span class="nav-title">Résumé</span>
-                            </div>
-                            <div class="nav-right">
-                                <span class="nav-desc">Download PDF</span>
-                                <span class="nav-arrow">↓</span>
-                            </div>
+                            <span class="nav-title">Resume</span>
+                            <span class="nav-arrow">↓</span>
                         </a>
                     </li>
                 </ul>
-            </header>
+            </nav>
         </div>
 
         <footer>
@@ -503,7 +340,7 @@
                     </li>
                     <li><a href="mailto:angadmuthyala@gmail.com">Email</a></li>
                 </ul>
-                <span class="footer-copy">© 2026 Angad Muthyala</span>
+                <span class="footer-copy">© 2026</span>
             </div>
         </footer>
     </body>
