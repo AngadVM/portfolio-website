@@ -16,7 +16,7 @@ Built the whole backend for a live SaaS product — automated video-response int
 
 ## Production CI/CD Pipeline — GitHub Actions + Terraform + AWS EKS
 
-[GitHub →](https://github.com/AngadVM)
+[GitHub →](https://github.com/AngadVM/Prodution-CI-CD-pipeline)
 
 Designed an 8-stage GitHub Actions pipeline — lint, SonarCloud SAST, Docker build, Trivy CVE scan, ECR push, Terraform apply, EKS deploy, boto3 smoke test — with hard-fail gates at each security step. Provisioned AWS infra (VPC, EKS, ECR, S3, IAM) via Terraform modules with remote state in S3 + DynamoDB lock; used OIDC auth — zero long-lived AWS keys in CI. Added Checkov and tfsec IaC security gates, resolving 12 real violations. Deployed kube-prometheus-stack via Helm with PromQL alerting rules routed to Slack through Alertmanager.
 
@@ -26,7 +26,7 @@ Designed an 8-stage GitHub Actions pipeline — lint, SonarCloud SAST, Docker bu
 
 ## GitOps Platform — ArgoCD + Vault + Blue-Green Delivery
 
-[GitHub →](https://github.com/AngadVM)
+[GitHub →](https://github.com/AngadVM/GitOps-platform)
 
 Implemented two-repo GitOps: CI updates only the Helm values image tag in a config repo — ArgoCD auto-syncs to EKS within 3 minutes. Zero kubectl in CI pipelines. Configured Argo Rollouts blue-green strategy with a Prometheus analysis template — auto-promotes if error rate < 1%, auto-aborts on breach. Deployed HashiCorp Vault on Kubernetes with Agent Injector — eliminated every hardcoded secret, replaced with dynamic injection at pod start; Sealed Secrets handles git-committed encrypted values that only the cluster can decrypt.
 
