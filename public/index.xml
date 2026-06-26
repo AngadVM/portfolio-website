@@ -1,39 +1,43 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Home on Angad Muthyala - Portfolio</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Home on Angad Muthyala - Portfolio</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description>&lt;h1 id=&#34;about-me&#34;&gt;About Me&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m Angad Muthyala, a backend engineer focused on building scalable systems and integrating AI into production environments. I design and develop backend architectures that are reliable, maintainable, and built for real-world scale.&lt;/p&gt;&#xA;&lt;p&gt;My work spans high-performance APIs, real-time systems, authentication workflows, and ML-powered pipelines. I’ve built and shipped full-stack products, architected structured backend services, and contributed to system-level decisions that improve performance and reliability.&lt;/p&gt;&#xA;&lt;p&gt;Technically, I work across Python, Golang, and TypeScript, building services with frameworks like NestJS, FastAPI, and Flask. I’ve worked with PostgreSQL, MongoDB, Elasticsearch, and vector databases, and have experience deploying machine learning systems using PyTorch and Scikit-learn. My interests lie at the intersection of backend infrastructure and applied AI.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Community</title>
-      <link>http://localhost:1313/community/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/community/</guid>
-      <description>&lt;h1 id=&#34;community--contribution&#34;&gt;Community &amp;amp; Contribution&lt;/h1&gt;&#xA;&lt;p&gt;Community has been a core part of my engineering journey. Beyond building systems and shipping products, I’ve consistently invested in creating spaces where developers learn by doing, collaborate openly, and grow through contribution. For me, community work is not separate from engineering — it strengthens it.&lt;/p&gt;&#xA;&lt;h2 id=&#34;foss-united--volunteer&#34;&gt;FOSS United — Volunteer&lt;/h2&gt;&#xA;&lt;p&gt;As the founding Campus Lead for FOSS United at my college, I worked to establish a strong open-source culture from the ground up. The goal was simple but ambitious: make open source approachable, practical, and meaningful for students who had never contributed before.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Contact</title>
-      <link>http://localhost:1313/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
-      <description>&lt;h1 id=&#34;lets-connect&#34;&gt;Let&amp;rsquo;s Connect&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;m always open to discussing new opportunities, collaborating on interesting projects, or simply having a conversation about technology and development.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;get-in-touch&#34;&gt;Get In Touch&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Email&lt;/strong&gt;&lt;br&gt;&#xA;&lt;a href=&#34;mailto:angadmuthyala@gmail.com&#34;&gt;angadmuthyala@gmail.com&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;GitHub&lt;/strong&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://github.com/AngadVM&#34;&gt;→ AngadVM&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;LinkedIn&lt;/strong&gt;&lt;br&gt;&#xA;&lt;a href=&#34;https://www.linkedin.com/in/angad-muthyala/&#34;&gt;→ angad-muthyala&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;Looking forward to hearing from you and exploring how we can create something meaningful together.&lt;/em&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Experience &amp; Projects</title>
-      <link>http://localhost:1313/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
-      <description>&lt;h1 id=&#34;experience--projects&#34;&gt;Experience &amp;amp; Projects&lt;/h1&gt;&#xA;&lt;p&gt;A selection of professional work and technical systems demonstrating backend architecture, AI integration, real-time pipelines, and full-stack product engineering.&lt;/p&gt;&#xA;&lt;h2 id=&#34;interview-screener-platform&#34;&gt;Interview Screener Platform&lt;/h2&gt;&#xA;&lt;p&gt;AI BI Street Pvt. Ltd. | Backend Developer&lt;br&gt;&#xA;November 2025 – Present&lt;/p&gt;&#xA;&lt;p&gt;Architecting and building a full-stack automated interview platform designed to streamline technical recruitment workflows.&lt;/p&gt;&#xA;&lt;p&gt;Designed the core backend architecture using NestJS with PostgreSQL, implementing scalable data models for a multi-tenant interview system. Built structured modules for interview creation, scheduling, candidate onboarding, and recruiter workflows. Developed a timed video response system with secure recording and playback capabilities, ensuring reliable storage and access handling.&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Home on Angad Muthyala | DevOps Engineer</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content in Home on Angad Muthyala | DevOps Engineer</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>About</title>
+				<link>http://localhost:1313/about/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/about/</guid>
+				<description>&lt;p&gt;I&amp;rsquo;m a DevOps Engineer and backend developer based in Mumbai. I recently built and shipped a live SaaS product — owning the backend architecture, CI/CD pipeline, observability stack, and deployment infrastructure end to end.&lt;/p&gt;&#xA;&lt;p&gt;My work spans the full infrastructure and backend spectrum. I design multi-stage GitHub Actions pipelines with Trivy and SonarCloud security gates, provision AWS EKS clusters through Terraform with OIDC authentication, and manage GitOps delivery via ArgoCD with blue-green rollouts backed by Prometheus analysis. On the backend side, I build APIs with NestJS and FastAPI, design PostgreSQL schemas, and set up Grafana dashboards for production observability.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Community</title>
+				<link>http://localhost:1313/community/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/community/</guid>
+				<description>&lt;h2 id=&#34;foss-united--campus-lead&#34;&gt;FOSS United — Campus Lead&lt;/h2&gt;&#xA;&lt;p&gt;Conducted multiple seminars on open source — what it means, why it matters, and how to get started contributing to real projects. The goal was to demystify open source and show that you don&amp;rsquo;t need to be a senior engineer to make meaningful contributions.&lt;/p&gt;&#xA;&lt;p&gt;Ran hands-on workshops on Linux and programming — covering the command line, Git workflows, basic shell scripting, and introductory Python/Go sessions. Focused on practical skills that students could immediately apply in their own projects or coursework.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Contact</title>
+				<link>http://localhost:1313/contact/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/contact/</guid>
+				<description>&lt;h2 id=&#34;reach-out&#34;&gt;Reach out&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&#34;mailto:angadmuthyala@gmail.com&#34;&gt;angadmuthyala@gmail.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;GitHub:&lt;/strong&gt; &lt;a href=&#34;https://github.com/AngadVM&#34;&gt;github.com/AngadVM&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;LinkedIn:&lt;/strong&gt; &lt;a href=&#34;https://linkedin.com/in/angad-muthyala&#34;&gt;linkedin.com/in/angad-muthyala&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Resume:&lt;/strong&gt; &lt;a href=&#34;http://localhost:1313/static/upload/angad_resume_v1.pdf&#34;&gt;Download PDF&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;Always down to talk code, opportunities, or just what&amp;rsquo;s interesting in the market.&lt;/em&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Projects</title>
+				<link>http://localhost:1313/projects/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/projects/</guid>
+				<description>&lt;h2 id=&#34;ai-bi-street--interview-screener&#34;&gt;AI BI Street — Interview Screener&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Sole backend engineer&lt;/em&gt; | Nov 2025 – Apr 2026&lt;/p&gt;&#xA;&lt;p&gt;Built the whole backend for a live SaaS product — automated video-response interviews with active recruiter and candidate accounts in production. Designed the full interview lifecycle: question sets, timed video recording, token-signed magic-link auth (no passwords stored). Containerised with Docker, wired a GitHub Actions pipeline that builds, tests, and deploys on every merge to main. Instrumented with Prometheus and built a Grafana dashboard tracking latency, error rate, and throughput. Architected a subscription model with middleware-level feature gating.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

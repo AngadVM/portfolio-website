@@ -3,343 +3,221 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{{ .Site.Title }}</title>
+        <title>Angad Muthyala | DevOps Engineer</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
-            rel="stylesheet"
-        />
-
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
         <style>
             :root {
-                --bg: #ffffff;
-                --text-primary: #000000;
-                --text-body: #171717;
-                --text-muted: #737373;
-                --text-faint: #a3a3a3;
-                --border: #e5e5e5;
-                --accent: #0066ff;
-                --accent-hover: #0052cc;
+                --text: #111;
+                --text-light: #555;
+                --text-muted: #888;
+                --bg: #fff;
+                --accent: #111;
             }
 
-            *,
-            *::before,
-            *::after {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-
-            html {
-                scroll-behavior: smooth;
-            }
+            * { margin: 0; padding: 0; box-sizing: border-box; }
 
             body {
-                font-family:
-                    "Manrope",
-                    -apple-system,
-                    BlinkMacSystemFont,
-                    sans-serif;
+                font-family: "Inter", -apple-system, sans-serif;
                 background: var(--bg);
-                color: var(--text-body);
-                line-height: 1.6;
-                min-height: 100vh;
-                display: flex;
-                flex-direction: column;
-                -webkit-font-smoothing: antialiased;
-                -moz-osx-font-smoothing: grayscale;
-            }
-
-            .wrapper {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-            }
-
-            /* ─── HERO ─── */
-            .hero {
-                max-width: 640px;
-                margin: 0 auto;
-                padding: 10rem 2rem 6rem;
-                width: 100%;
-            }
-
-            h1 {
-                font-size: clamp(2.5rem, 6vw, 3.75rem);
-                font-weight: 700;
-                color: var(--text-primary);
-                letter-spacing: -0.04em;
-                line-height: 1;
-                margin-bottom: 1.5rem;
-            }
-
-            .subtitle {
-                font-size: 1.125rem;
-                font-weight: 400;
-                color: var(--text-muted);
+                color: var(--text);
+                font-size: 16px;
                 line-height: 1.7;
-                margin-bottom: 0.75rem;
-            }
-
-            .meta {
                 display: flex;
-                gap: 1.5rem;
-                flex-wrap: wrap;
-                margin-top: 3rem;
-                padding-top: 3rem;
-                border-top: 1px solid var(--border);
+                flex-direction: column;
+                min-height: 100vh;
             }
 
-            .meta-item {
+            main { flex: 1; }
+
+            a { color: var(--accent); }
+
+            .container {
+                max-width: 680px;
+                margin: 0 auto;
+                padding: 0 1.5rem;
+            }
+
+            /* HERO */
+            .hero { padding: 5rem 0 4rem; }
+
+            .hero-title {
+                font-family: "Crimson Pro", Georgia, serif;
+                font-size: clamp(2.25rem, 5vw, 3.5rem);
+                font-weight: 700;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+
+            .hero-text {
+                font-size: 1.125rem;
+                color: var(--text-light);
+                margin-bottom: 2.5rem;
+                max-width: 520px;
+            }
+
+            .hero-meta {
+                display: flex;
+                gap: 2.5rem;
+            }
+
+            .hero-meta-item {
                 display: flex;
                 flex-direction: column;
                 gap: 0.25rem;
             }
 
-            .meta-label {
-                font-family: "JetBrains Mono", monospace;
-                font-size: 0.6875rem;
-                font-weight: 500;
-                color: var(--text-faint);
+            .hero-meta-label {
+                font-size: 0.7rem;
                 text-transform: uppercase;
-                letter-spacing: 0.1em;
+                letter-spacing: 0.06em;
+                color: var(--text-muted);
             }
 
-            .meta-value {
-                font-size: 0.875rem;
-                font-weight: 500;
-                color: var(--text-body);
+            .hero-meta-value { font-weight: 500; }
+            .hero-meta-value.accent { color: var(--accent); }
+
+            /* TOC */
+            .toc {
+                padding: 0 0 4rem;
             }
 
-            /* ─── NAV ─── */
-            .nav-section {
-                max-width: 640px;
-                margin: 0 auto;
-                padding: 0 2rem 8rem;
-                width: 100%;
-            }
-
-            .nav-list {
+            .toc-list {
                 list-style: none;
-                display: flex;
-                flex-direction: column;
-                gap: 0;
+                border-top: 1px solid #eee;
             }
 
-            .nav-list li {
-                border-bottom: 1px solid var(--border);
+            .toc-list li {
+                border-bottom: 1px solid #eee;
             }
 
-            .nav-list li:first-child {
-                border-top: 1px solid var(--border);
-            }
-
-            .nav-list a {
+            .toc-list a {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 padding: 1.25rem 0;
                 text-decoration: none;
-                color: inherit;
-                transition: padding-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-                position: relative;
+                font-weight: 500;
+                font-size: 1.05rem;
+                color: var(--text);
+                transition: padding-left 0.2s;
             }
 
-            .nav-list a::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 3px;
-                height: 0;
-                background: var(--accent);
-                transition: height 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            .toc-list a:hover {
+                padding-left: 0.5rem;
+                color: var(--text);
             }
 
-            .nav-list a:hover::before {
-                height: 60%;
+            .toc-arrow {
+                font-size: 1.1rem;
+                color: var(--text-muted);
+                transition: transform 0.2s;
             }
 
-            .nav-list a:hover {
-                padding-left: 1rem;
+            .toc-list a:hover .toc-arrow {
+                transform: translateX(3px);
+                color: var(--text);
             }
 
-            .nav-title {
-                font-size: 1.125rem;
-                font-weight: 600;
-                color: var(--text-primary);
-                letter-spacing: -0.02em;
-                transition: color 0.2s ease;
-            }
-
-            .nav-list a:hover .nav-title {
-                color: var(--accent);
-            }
-
-            .nav-arrow {
-                font-size: 1.25rem;
-                color: var(--text-faint);
-                opacity: 0;
-                transform: translateX(-8px);
-                transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-            }
-
-            .nav-list a:hover .nav-arrow {
-                opacity: 1;
-                transform: translateX(0);
-                color: var(--accent);
-            }
-
-            /* ─── FOOTER ─── */
+            /* FOOTER */
             footer {
-                border-top: 1px solid var(--border);
                 padding: 2rem 0;
+                border-top: 1px solid #eee;
             }
 
-            .footer-inner {
-                max-width: 640px;
-                margin: 0 auto;
-                padding: 0 2rem;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-                gap: 1rem;
-            }
-
-            .footer-links {
-                display: flex;
-                gap: 2rem;
-                list-style: none;
-            }
+            .footer-links { display: flex; gap: 1.5rem; }
 
             .footer-links a {
                 font-size: 0.875rem;
-                font-weight: 500;
-                color: var(--text-muted);
+                color: var(--text-light);
                 text-decoration: none;
-                transition: color 0.2s ease;
             }
 
-            .footer-links a:hover {
-                color: var(--accent);
-            }
+            .footer-links a:hover { color: var(--text); }
+            .footer-copy { font-size: 0.8rem; color: var(--text-muted); }
 
-            .footer-copy {
-                font-family: "JetBrains Mono", monospace;
-                font-size: 0.75rem;
-                color: var(--text-faint);
-                letter-spacing: 0.03em;
-            }
-
-            /* ─── RESPONSIVE ─── */
             @media (max-width: 640px) {
-                .hero {
-                    padding: 6rem 1.5rem 4rem;
-                }
-                .nav-section {
-                    padding: 0 1.5rem 6rem;
-                }
-                .footer-inner {
-                    padding: 0 1.5rem;
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
-                h1 {
-                    font-size: 2.25rem;
-                }
-                .subtitle {
-                    font-size: 1rem;
-                }
-                .meta {
-                    gap: 1rem;
-                }
+                .hero { padding: 3.5rem 0 3rem; }
+                .hero-title { font-size: 2rem; }
+                .hero-meta { gap: 1.5rem; flex-wrap: wrap; }
             }
         </style>
     </head>
     <body>
-        <div class="wrapper">
-            <header class="hero">
-                <h1>Angad Muthyala</h1>
-                <p class="subtitle">
-                    I’m a software engineer building scalable systems and
-                    constantly refining my craft. I’m always learning and
-                    growing—fueled by curiosity and enough coffee to legally be
-                    considered a stimulant.
-                </p>
-
-                <div class="meta">
-                    <div class="meta-item">
-                        <span class="meta-label">Role</span>
-                        <span class="meta-value">Software Developer</span>
-                    </div>
-                    <div class="meta-item">
-                        <span class="meta-label">Location</span>
-                        <span class="meta-value">Mumbai, India</span>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <h1 class="hero-title">DevOps Engineer</h1>
+                    <p class="hero-text">
+                        Cloud infrastructure, CI/CD, and backend — I build systems that
+                        ship reliably and stay observable. Designed multi-stage pipelines
+                        with security gates, provisioned EKS clusters via Terraform, and
+                        shipped a live SaaS product end to end.
+                    </p>
+                    <div class="hero-meta">
+                        <div class="hero-meta-item">
+                            <span class="hero-meta-label">Focus</span>
+                            <span class="hero-meta-value">DevOps · Cloud · Backend</span>
+                        </div>
+                        <div class="hero-meta-item">
+                            <span class="hero-meta-label">Location</span>
+                            <span class="hero-meta-value">Mumbai</span>
+                        </div>
+                        <div class="hero-meta-item">
+                            <span class="hero-meta-label">Status</span>
+                            <span class="hero-meta-value accent">Open to work</span>
+                        </div>
                     </div>
                 </div>
-            </header>
+            </section>
 
-            <nav class="nav-section">
-                <ul class="nav-list">
-                    <li>
-                        <a href="/about">
-                            <span class="nav-title">About</span>
-                            <span class="nav-arrow">→</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/projects">
-                            <span class="nav-title">Projects</span>
-                            <span class="nav-arrow">→</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/community">
-                            <span class="nav-title">Community</span>
-                            <span class="nav-arrow">→</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/contact">
-                            <span class="nav-title">Contact</span>
-                            <span class="nav-arrow">→</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/upload/angad_resume.pdf">
-                            <span class="nav-title">Resume</span>
-                            <span class="nav-arrow">↓</span>
-                        </a>
-                    </li>
-                </ul>
+            <nav class="toc">
+                <div class="container">
+                    <ul class="toc-list">
+                        <li>
+                            <a href="/about/">
+                                About
+                                <span class="toc-arrow">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/projects/">
+                                Projects
+                                <span class="toc-arrow">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/community/">
+                                Community
+                                <span class="toc-arrow">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/contact/">
+                                Contact
+                                <span class="toc-arrow">→</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/upload/angad_resume.pdf">
+                                Resume
+                                <span class="toc-arrow">↓</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-        </div>
+        </main>
 
         <footer>
-            <div class="footer-inner">
-                <ul class="footer-links">
-                    <li>
-                        <a
-                            href="{{ .Site.Params.github }}"
-                            target="_blank"
-                            rel="noopener"
-                            >GitHub</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                            href="{{ .Site.Params.linkedin }}"
-                            target="_blank"
-                            rel="noopener"
-                            >LinkedIn</a
-                        >
-                    </li>
-                    <li><a href="mailto:{{ .Site.Params.email }}">Email</a></li>
-                </ul>
-                <span class="footer-copy">© {{ now.Year }}</span>
+            <div class="container">
+                <div class="footer-links">
+                    <a href="https://github.com/AngadVM" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/angad-muthyala" target="_blank">LinkedIn</a>
+                    <a href="mailto:angadmuthyala@gmail.com">Email</a>
+                </div>
+                <span class="footer-copy">© 2025 Angad Muthyala</span>
             </div>
         </footer>
     </body>

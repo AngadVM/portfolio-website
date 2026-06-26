@@ -1,10 +1,17 @@
 baseURL = 'http://localhost:1313'
 languageCode = 'en-us'
-title = 'Angad Muthyala - Portfolio'
+title = 'Angad Muthyala | DevOps Engineer'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+ignoreLogs = ['warning-goldmark-raw-html']
 
 [params]
   author = 'Angad Muthyala'
-  description = 'Computer Science Student | Backend Developer | AI Enthusiast'
+  description = 'DevOps Engineer | Cloud & Infrastructure | Backend Developer'
   email = 'angadmuthyala@gmail.com'
   phone = '+91-8779263718'
   location = 'Mumbai, India'

@@ -2,16 +2,12 @@
 title: "About"
 ---
 
-# About Me
+I'm a DevOps Engineer and backend developer based in Mumbai. I recently built and shipped a live SaaS product — owning the backend architecture, CI/CD pipeline, observability stack, and deployment infrastructure end to end.
 
-I'm Angad Muthyala, a backend engineer focused on building scalable systems and integrating AI into production environments. I design and develop backend architectures that are reliable, maintainable, and built for real-world scale.
+My work spans the full infrastructure and backend spectrum. I design multi-stage GitHub Actions pipelines with Trivy and SonarCloud security gates, provision AWS EKS clusters through Terraform with OIDC authentication, and manage GitOps delivery via ArgoCD with blue-green rollouts backed by Prometheus analysis. On the backend side, I build APIs with NestJS and FastAPI, design PostgreSQL schemas, and set up Grafana dashboards for production observability.
 
-My work spans high-performance APIs, real-time systems, authentication workflows, and ML-powered pipelines. I’ve built and shipped full-stack products, architected structured backend services, and contributed to system-level decisions that improve performance and reliability.
+I work primarily with Python, Go, TypeScript, Terraform, Docker, Kubernetes, Prometheus, and AWS — with a focus on building reliable, observable systems that scale.
 
-Technically, I work across Python, Golang, and TypeScript, building services with frameworks like NestJS, FastAPI, and Flask. I’ve worked with PostgreSQL, MongoDB, Elasticsearch, and vector databases, and have experience deploying machine learning systems using PyTorch and Scikit-learn. My interests lie at the intersection of backend infrastructure and applied AI.
+I hold a B.E. in Computer Science from Mumbai University and have conducted seminars on open source software and workshops on Linux and programming.
 
-Beyond engineering, I’ve led developer communities and technical initiatives, organizing workshops, mentoring peers, and fostering open-source contributions. I believe strong systems are built by strong teams, and strong teams are built through shared knowledge.
-
-I value clarity in architecture, discipline in execution, and ownership in everything I build.
-
-Let’s connect — angadmuthyala@gmail.com
+**Email:** [angadmuthyala@gmail.com](mailto:angadmuthyala@gmail.com)

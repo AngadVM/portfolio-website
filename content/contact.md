@@ -2,23 +2,13 @@
 title: "Contact"
 ---
 
-# Let's Connect
+## Reach out
 
-I'm always open to discussing new opportunities, collaborating on interesting projects, or simply having a conversation about technology and development.
-
----
-
-## Get In Touch
-
-**Email**  
-[angadmuthyala@gmail.com](mailto:angadmuthyala@gmail.com)
-
-**GitHub**  
-[→ AngadVM](https://github.com/AngadVM)  
-
-**LinkedIn**  
-[→ angad-muthyala](https://www.linkedin.com/in/angad-muthyala/)  
+- **Email:** [angadmuthyala@gmail.com](mailto:angadmuthyala@gmail.com)
+- **GitHub:** [github.com/AngadVM](https://github.com/AngadVM)
+- **LinkedIn:** [linkedin.com/in/angad-muthyala](https://linkedin.com/in/angad-muthyala)
+- **Resume:** [Download PDF](/static/upload/angad_resume_v1.pdf)
 
 ---
 
-*Looking forward to hearing from you and exploring how we can create something meaningful together.*
+*Always down to talk code, opportunities, or just what's interesting in the market.*
