@@ -36,7 +36,7 @@ Implemented two-repo GitOps: CI updates only the Helm values image tag in a conf
 
 ## Go Profiler — CLI Performance Analyzer
 
-[GitHub →](https://github.com/AngadVM)
+[GitHub →](https://github.com/AngadVM/goprofiler)
 
 Parses Go source files using the AST to flag anti-patterns — string concatenation inside loops, deferred calls in hot paths, unnecessary allocations — and prints file-and-line-level fix suggestions to stdout.
 

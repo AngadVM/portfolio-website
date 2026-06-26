@@ -14,6 +14,18 @@
                 --text-muted: #888;
                 --bg: #fff;
                 --accent: #111;
+                --border: #eee;
+                --surface: #f5f5f5;
+            }
+
+            html.dark {
+                --text: #e5e5e5;
+                --text-light: #a3a3a3;
+                --text-muted: #737373;
+                --bg: #1a1a1a;
+                --accent: #e5e5e5;
+                --border: #333;
+                --surface: #2a2a2a;
             }
 
             * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -27,12 +39,13 @@
                 display: flex;
                 flex-direction: column;
                 min-height: 100vh;
+                transition: background 0.3s, color 0.3s;
             }
 
             main { flex: 1; }
 
             a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
-            a:hover { color: #555; }
+            a:hover { color: var(--text-light); }
 
             .container {
                 max-width: 680px;
@@ -120,12 +133,12 @@
 
             .content hr {
                 border: none;
-                border-top: 1px solid #eee;
+                border-top: 1px solid var(--border);
                 margin: 2.5rem 0;
             }
 
             .content blockquote {
-                border-left: 2px solid #eee;
+                border-left: 2px solid var(--border);
                 padding-left: 1rem;
                 margin: 1.5rem 0;
                 color: var(--text-light);
@@ -135,13 +148,13 @@
             .content code {
                 font-family: "JetBrains Mono", monospace;
                 font-size: 0.875rem;
-                background: #f5f5f5;
+                background: var(--surface);
                 padding: 0.15rem 0.4rem;
                 border-radius: 3px;
             }
 
             .content pre {
-                background: #f5f5f5;
+                background: var(--surface);
                 padding: 1rem;
                 border-radius: 4px;
                 overflow-x: auto;
@@ -162,7 +175,7 @@
              
             footer {
                 padding: 2rem 0;
-                border-top: 1px solid #eee;
+                border-top: 1px solid var(--border);
             }
 
             .footer-links { display: flex; gap: 1.5rem; }
@@ -175,6 +188,19 @@
 
             .footer-links a:hover { color: var(--text); }
             .footer-copy { font-size: 0.8rem; color: var(--text-muted); }
+
+            .theme-toggle {
+                background: none;
+                border: none;
+                font-size: 0.8rem;
+                color: var(--text-muted);
+                cursor: pointer;
+                padding: 0;
+                font-family: inherit;
+                transition: color 0.2s;
+            }
+
+            .theme-toggle:hover { color: var(--text); }
 
             @media (max-width: 640px) {
                 .nav { display: none; }
@@ -219,7 +245,26 @@
                     <a href="mailto:angadmuthyala@gmail.com">Email</a>
                 </div>
                 <span class="footer-copy">© 2025 Angad Muthyala</span>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">Dark</button>
             </div>
         </footer>
+        <script>
+            (function() {
+                const html = document.documentElement;
+                const toggle = document.getElementById('themeToggle');
+                const stored = localStorage.getItem('theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                const isDark = stored ? stored === 'dark' : prefersDark;
+                if (isDark) html.classList.add('dark');
+                if (toggle) toggle.textContent = isDark ? 'Light' : 'Dark';
+                if (toggle) {
+                    toggle.addEventListener('click', function() {
+                        const now = html.classList.toggle('dark');
+                        localStorage.setItem('theme', now ? 'dark' : 'light');
+                        this.textContent = now ? 'Light' : 'Dark';
+                    });
+                }
+            })();
+        </script>
     </body>
 </html>

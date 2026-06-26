@@ -7,7 +7,7 @@ title: "Contact"
 - **Email:** [angadmuthyala@gmail.com](mailto:angadmuthyala@gmail.com)
 - **GitHub:** [github.com/AngadVM](https://github.com/AngadVM)
 - **LinkedIn:** [linkedin.com/in/angad-muthyala](https://linkedin.com/in/angad-muthyala)
-- **Resume:** [Download PDF](static/upload/angad_resume_v1.pdf)
+- **Resume:** [Download PDF](/upload/angad_resume.pdf)
 
 ---
 
