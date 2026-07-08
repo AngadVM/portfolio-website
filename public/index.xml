@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Home on Angad Muthyala | DevOps Engineer</title>
+		<title>Home on Angad Muthyala | Backend Developer</title>
 		<link>http://localhost:1313/</link>
-		<description>Recent content in Home on Angad Muthyala | DevOps Engineer</description>
+		<description>Recent content in Home on Angad Muthyala | Backend Developer</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
@@ -16,7 +16,7 @@
 				<link>http://localhost:1313/about/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/about/</guid>
-				<description>&lt;p&gt;I&amp;rsquo;m a DevOps Engineer and backend developer based in Mumbai. I recently built and shipped a live SaaS product — owning the backend architecture, CI/CD pipeline, observability stack, and deployment infrastructure end to end.&lt;/p&gt;&#xA;&lt;p&gt;My work spans the full infrastructure and backend spectrum. I design multi-stage GitHub Actions pipelines with Trivy and SonarCloud security gates, provision AWS EKS clusters through Terraform with OIDC authentication, and manage GitOps delivery via ArgoCD with blue-green rollouts backed by Prometheus analysis. On the backend side, I build APIs with NestJS and FastAPI, design PostgreSQL schemas, and set up Grafana dashboards for production observability.&lt;/p&gt;</description>
+				<description>&lt;p&gt;I&amp;rsquo;m a backend developer based in Mumbai who cares about the full lifecycle — from designing database schemas to shipping production infrastructure. I recently built an AI-powered video interview platform from scratch as the sole backend engineer: NestJS APIs, PostgreSQL with Prisma, async job queues with Redis, WebRTC video handling, and Cloudflare R2 for media storage. It&amp;rsquo;s live with real users.&lt;/p&gt;&#xA;&lt;p&gt;My work spans backend and infrastructure. I write APIs with NestJS and FastAPI, optimize PostgreSQL queries, and set up CI/CD pipelines in Jenkins and GitHub Actions. I also provision AWS environments with Terraform — EKS, VPC, IAM, the works — and wire up monitoring with Prometheus and Grafana.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Community</title>
@@ -37,7 +37,7 @@
 				<link>http://localhost:1313/projects/</link>
 				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/projects/</guid>
-				<description>&lt;h2 id=&#34;ai-bi-street--interview-screener&#34;&gt;AI BI Street — Interview Screener&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Sole backend engineer&lt;/em&gt; | Nov 2025 – Apr 2026&lt;/p&gt;&#xA;&lt;p&gt;Built the whole backend for a live SaaS product — automated video-response interviews with active recruiter and candidate accounts in production. Designed the full interview lifecycle: question sets, timed video recording, token-signed magic-link auth (no passwords stored). Containerised with Docker, wired a GitHub Actions pipeline that builds, tests, and deploys on every merge to main. Instrumented with Prometheus and built a Grafana dashboard tracking latency, error rate, and throughput. Architected a subscription model with middleware-level feature gating.&lt;/p&gt;</description>
+				<description>&lt;h2 id=&#34;ai-bi-street--interview-screener&#34;&gt;AI BI Street — Interview Screener&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;Sole backend engineer&lt;/em&gt; | Nov 2025 – Apr 2026&lt;/p&gt;&#xA;&lt;p&gt;Sole backend engineer on an AI-powered video interview platform (NestJS, Next.js, PostgreSQL) in production with active recruiter and candidate workflows. Built the full interview lifecycle: WebRTC video recording with chunked uploads, candidate invite flows, and passwordless magic-link auth across three user roles.&lt;/p&gt;&#xA;&lt;p&gt;Designed an async media pipeline (BullMQ + Redis) for video compression, transcription, and LLM-based evaluation, with retry and job persistence. Built an AI interview-prep generator — ingests PDF resumes and job URLs, runs a 3-pass Groq editorial pipeline (generate, critique, rewrite) into structured PDF prep materials.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

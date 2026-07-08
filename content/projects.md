@@ -6,31 +6,35 @@ title: "Projects"
 
 *Sole backend engineer* | Nov 2025 – Apr 2026
 
-Built the whole backend for a live SaaS product — automated video-response interviews with active recruiter and candidate accounts in production. Designed the full interview lifecycle: question sets, timed video recording, token-signed magic-link auth (no passwords stored). Containerised with Docker, wired a GitHub Actions pipeline that builds, tests, and deploys on every merge to main. Instrumented with Prometheus and built a Grafana dashboard tracking latency, error rate, and throughput. Architected a subscription model with middleware-level feature gating.
+Sole backend engineer on an AI-powered video interview platform (NestJS, Next.js, PostgreSQL) in production with active recruiter and candidate workflows. Built the full interview lifecycle: WebRTC video recording with chunked uploads, candidate invite flows, and passwordless magic-link auth across three user roles.
 
-*Stack: NestJS · Next.js · PostgreSQL · Docker · GitHub Actions · Prometheus · Grafana*
+Designed an async media pipeline (BullMQ + Redis) for video compression, transcription, and LLM-based evaluation, with retry and job persistence. Built an AI interview-prep generator — ingests PDF resumes and job URLs, runs a 3-pass Groq editorial pipeline (generate, critique, rewrite) into structured PDF prep materials.
+
+Migrated storage from local disk to Cloudflare R2, removing a recurring class of upload failures and enabling presigned-URL streaming. Built the subscription layer — feature gating, usage limits, and the REST contract with JWT auth and a Prisma-backed schema.
+
+*Stack: NestJS · Next.js · PostgreSQL · Prisma · Redis (BullMQ) · Docker · Cloudflare R2 · Groq*
 
 [Live site →](https://dev.screener.scrollverse.site)
 
 ---
 
-## Production CI/CD Pipeline — GitHub Actions + Terraform + AWS EKS
+## Production CI/CD Pipeline — Jenkins, Terraform, AWS EKS
 
 [GitHub →](https://github.com/AngadVM/Prodution-CI-CD-pipeline)
 
-Designed an 8-stage GitHub Actions pipeline — lint, SonarCloud SAST, Docker build, Trivy CVE scan, ECR push, Terraform apply, EKS deploy, boto3 smoke test — with hard-fail gates at each security step. Provisioned AWS infra (VPC, EKS, ECR, S3, IAM) via Terraform modules with remote state in S3 + DynamoDB lock; used OIDC auth — zero long-lived AWS keys in CI. Added Checkov and tfsec IaC security gates, resolving 12 real violations. Deployed kube-prometheus-stack via Helm with PromQL alerting rules routed to Slack through Alertmanager.
+8-stage Jenkins pipeline (lint, SonarCloud SAST, Docker build, Trivy scan, ECR push, Terraform apply, EKS deploy, smoke test) with hard-fail gates at every security step. Terraform-provisioned AWS infra (VPC, EKS, ECR, S3, IAM) with OIDC auth — zero long-lived keys in CI — and Checkov/tfsec gates that caught 12 real misconfigurations.
 
-*Stack: GitHub Actions · Terraform · AWS EKS/ECR · Docker · Helm · Prometheus · Grafana · Trivy · SonarCloud · Checkov · Python boto3*
+*Stack: Jenkins · Terraform · AWS EKS/ECR · Docker · Trivy · SonarCloud · Checkov · Python boto3*
 
 ---
 
-## GitOps Platform — ArgoCD + Vault + Blue-Green Delivery
+## Reddit App Deployment on Amazon EKS
 
-[GitHub →](https://github.com/AngadVM/GitOps-platform)
+[GitHub →](https://github.com/AngadVM/Reddit-App-Deployment-on-Amazon-EKS)
 
-Implemented two-repo GitOps: CI updates only the Helm values image tag in a config repo — ArgoCD auto-syncs to EKS within 3 minutes. Zero kubectl in CI pipelines. Configured Argo Rollouts blue-green strategy with a Prometheus analysis template — auto-promotes if error rate < 1%, auto-aborts on breach. Deployed HashiCorp Vault on Kubernetes with Agent Injector — eliminated every hardcoded secret, replaced with dynamic injection at pod start; Sealed Secrets handles git-committed encrypted values that only the cluster can decrypt.
+Jenkins pipeline provisioning EKS via Terraform and gating every image build with SonarQube, OWASP Dependency-Check, and Trivy before push. ArgoCD GitOps sync (auto-prune, self-heal) with Prometheus/Grafana monitoring exposed via LoadBalancer.
 
-*Stack: ArgoCD · Argo Rollouts · Helm · Kubernetes · Vault · Sealed Secrets · GitHub Actions · AWS EKS*
+*Stack: Jenkins · Terraform · ArgoCD · EKS · Docker · SonarQube · Trivy · Prometheus · Grafana*
 
 ---
 
@@ -38,7 +42,7 @@ Implemented two-repo GitOps: CI updates only the Helm values image tag in a conf
 
 [GitHub →](https://github.com/AngadVM/goprofiler)
 
-Parses Go source files using the AST to flag anti-patterns — string concatenation inside loops, deferred calls in hot paths, unnecessary allocations — and prints file-and-line-level fix suggestions to stdout.
+Static analysis CLI that parses Go source via AST to flag performance anti-patterns with file-and-line-level fix suggestions.
 
 *Stack: Go · Static Analysis · CLI*
 
